@@ -1,0 +1,101 @@
+.gls {
+	background: #f8fbff;
+	&__wrapper {
+		position: relative;
+		display: flex;
+		padding-top: 150px;
+		padding-bottom: 170px;
+		@include _ptb150;
+		@include _768 {
+			flex-direction: column;
+			padding-bottom: 190px;
+		}
+		@include _350 {
+			height: 840px;
+		}
+	}
+	&__img {
+		max-width: 1209px;
+		max-width: 1284px;
+		max-height: 656px;
+		@include _1200 {
+			height: 40%;
+		}
+		@include _768 {
+			margin-top: 20px;
+			width: 100%;
+		}
+		@include _350 {
+			margin-top: 40px;
+			height: 100%;
+		}
+	}
+	&-left {
+		&__title {
+			z-index: 2;
+			position: relative;
+			@include _fz100;
+			&::before {
+				content: '';
+				background-color: #ffbc1f;
+				width: 132px;
+				height: 132px;
+				position: absolute;
+				z-index: -2;
+				left: 220px;
+				top: -10px;
+				@include _400 {
+					width: 66px;
+					height: 66px;
+					left: 110px;
+					top: -6px;
+				}
+			}
+		}
+		&__text {
+			margin-top: 20px;
+			max-width: 560px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			@include _350 {
+				margin-top: 10px;
+			}
+			&-continue {
+				max-width: 560px;
+				margin-top: 10px;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				@include _350 {
+					margin-top: 20px;
+				}
+			}
+		}
+		&__btn {
+			margin-top: 40px;
+			@include _1200 {
+				margin: 0;
+				position: absolute;
+				right: 0px;
+				bottom: 30px;
+			}
+			@include _1024 {
+				bottom: 100px;
+				width: 300px;
+			}
+			@include _768 {
+				height: 87px;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				bottom: 60px;
+			}
+			@include _350 {
+				transform: translate(0, 0);
+				left: 0;
+				width: 322px;
+				height: 64px;
+			}
+		}
+	}
+}

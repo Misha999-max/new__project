@@ -1,0 +1,36 @@
+.vacancy-candidate {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	.vacancy__candidate {
+		&-title {
+			@include _fz44;
+			color: $textColorArtServCareer;
+		}
+		&-lists {
+			max-width: 850px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-row-gap: 40px;
+			padding-top: 20px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+			@include _1024 {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		&-item {
+			max-width: 270px;
+			&-number {
+				@include _fz44;
+				color: $orange;
+				margin-bottom: 20px;
+			}
+			&-desc {
+				font-weight: 400;
+				line-height: 150%;
+				@include _fz16;
+				color: $textColorArtServCareer;
+			}
+		}
+	}
+}

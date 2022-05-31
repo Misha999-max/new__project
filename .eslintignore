@@ -1,0 +1,6 @@
+src/js/*.js
+
+src/js/modules/*.js
+
+*.js
+

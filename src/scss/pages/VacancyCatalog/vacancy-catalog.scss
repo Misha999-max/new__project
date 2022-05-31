@@ -1,0 +1,104 @@
+.catalog-vacancy {
+	padding-top: 100px;
+	padding-bottom: 500px;
+}
+.catalog__vacancy {
+	&-title {
+		@include _fz100;
+	}
+
+	&-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-lists {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&-item {
+		&:first-child {
+			color: $orange;
+		}
+		&:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
+
+	&-link {
+		@include _fz18;
+		color: $textColorArtServCareer;
+	}
+	&-form {
+		position: relative;
+		&::before {
+			content: '';
+			top: -7px;
+			height: 7px;
+			width: 100%;
+			left: 3.5px;
+			transform: skewX(-45deg);
+			background-color: $bgcBlog;
+			position: absolute;
+			transition: all 0.8s;
+		}
+		&::after {
+			content: '';
+			right: -7px;
+			height: 100%;
+			width: 7px;
+			bottom: 3.5px;
+			transform: skewY(-45deg);
+			background-color: $bgcBlog;
+			position: absolute;
+			transition: all 0.8s;
+		}
+	}
+	&-img {
+		position: absolute;
+		top: 20px;
+		left: 30px;
+	}
+	&-search {
+		position: relative;
+		width: 840px;
+		padding: 25px 70px;
+		background-color: $bgcBlog;
+		color: $textColorArtServCareer;
+		opacity: 0.5;
+		border: 1px solid $bgcBlog;
+	}
+	&-wrraper {
+		padding-top: 20px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&-right {
+		margin-top: 80px;
+	}
+
+	&-info {
+		padding: 40px;
+		border: 1px solid #c5c7c9;
+		&-title {
+			margin-bottom: 10px;
+			@include _fz30;
+		}
+		&-desc {
+			@include _fz18;
+			color: $textColorArtServCareer;
+			opacity: 0.75;
+		}
+
+		&-lists {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-top: 65px;
+			margin-bottom: 35px;
+		}
+	}
+}

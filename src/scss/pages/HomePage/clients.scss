@@ -1,0 +1,81 @@
+.clients {
+	background-color: $black;
+	padding-top: 180px;
+	padding-bottom: 120px;
+	@include _768 {
+		padding-bottom: 50px;
+	}
+	@include _pt210;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		@include _1400 {
+			flex-direction: column;
+			justify-content: center;
+			grid-gap: 40px;
+		}
+		@include _768 {
+			grid-gap: 0px;
+		}
+	}
+	&-left {
+		@include _1200 {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+		&__title {
+			color: $white;
+			margin-bottom: 15px;
+			font-weight: 700;
+			line-height: 120%;
+			@include _fz100;
+		}
+		&__description {
+			color: $white;
+			opacity: 0.75;
+			max-width: 560px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+		}
+		&__btn {
+			margin-top: 47px;
+		}
+	}
+	&-grid {
+		opacity: 0.7;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		text-align: center;
+		grid-gap:  100px 80px;
+		justify-items: start;
+		align-items: center;
+		@include _1024 {
+			grid-gap: 60px;
+		}
+		@include _568 {
+			grid-gap: 20px;
+		}
+		&__item {
+			svg {
+				opacity: 0.5;
+				@include _768 {
+					width: 20vw;
+				}
+			}
+		}
+		&__more-clients {
+			color: $white;
+			font-size: 30px;
+			font-weight: 700;
+			opacity: 1;
+			@include _fz30;
+			@include _400 {
+				font-size: 12px;
+			}
+		}
+	}
+}

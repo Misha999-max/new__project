@@ -1,0 +1,122 @@
+.info {
+	&__resume-wrraper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		@include _1400 {
+			flex-wrap: wrap;
+		}
+	}
+}
+.vacancy {
+	&__info {
+		@include _1400 {
+			order: 2;
+		}
+	}
+	&__info-title {
+		@include _fz100;
+		@include _1400 {
+			display: none;
+		}
+	}
+	&__info-title-hidden {
+		@include _fz100;
+		display: none;
+		@include _1400 {
+			display: block;
+		}
+	}
+	&__info-desc {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		color: $textColorArtServCareer;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		@include _1024 {
+			display: none;
+		}
+	}
+	&__offer-title {
+		@include _fz44;
+		color: $textColorArtServCareer;
+		@include _fz44;
+	}
+	&__offer-lists {
+		max-width: 850px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+		column-gap: 20px;
+		row-gap: 40px;
+		padding-bottom: 40px;
+		padding-top: 20px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+	}
+	&__offer-yes {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+		margin-bottom: 18px;
+	}
+	&__offer-yes-first {
+		position: absolute;
+		left: -10px;
+		bottom: 15px;
+		display: block;
+		width: 20px;
+		height: 4px;
+		background-color: $orange;
+		transform: rotate(45deg);
+	}
+	&__offer-yes-second {
+		position: absolute;
+		bottom: 23px;
+		display: block;
+		width: 35px;
+		height: 4px;
+		background-color: $orange;
+		transform: rotate(130deg);
+	}
+	&__offer-desc {
+		font-weight: 400;
+		line-height: 150%;
+		font-size: 16px;
+		@include _fz16;
+	}
+	&__resume {
+		max-height: 900px;
+		padding: 40px 60px;
+		background-color: $bgcBlog;
+		max-width: 710px;
+		margin-bottom: 20px;
+		@include _1024 {
+			padding: 20px 10px;
+		}
+		&-slide-wrapper {
+			height: 850px !important;
+			@include _1200 {
+				height: 720px !important;
+			}
+		}
+		&-img {
+			cursor: pointer;
+			padding: 1px;
+		}
+
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+		&-title {
+			@include _fz30;
+			color: $orange;
+		}
+	}
+}

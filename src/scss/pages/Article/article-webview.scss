@@ -1,0 +1,41 @@
+.webview {
+	&__wrraper {
+		padding-top: 24px;
+		padding-bottom: 80px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+	}
+	&__title {
+		color: $textColorArtServCareer;
+		@include _fz44;
+	}
+	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 80px auto;
+	}
+	&__desc {
+		color: $textColorArtServCareer;
+		opacity: 0.75;
+		margin-bottom: 20px;
+		@include _fz20;
+	}
+	&__item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		color: $textColorArtServCareer;
+		opacity: 0.75;
+		margin-bottom: 20px;
+		@include _fz20;
+		&::before {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 15px;
+			background-color: $orange;
+			margin-right: 20px;
+		}
+		@include _fz20;
+	}
+}

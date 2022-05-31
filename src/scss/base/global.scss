@@ -1,0 +1,21 @@
+.visually-hidden {
+	visibility: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 0px;
+	height: 0px;
+	margin: -1px;
+}
+
+html {
+	font-family: 'Muller';
+}
+
+.main-heading {
+	height: 100px;
+	margin: 0;
+}
+
+// * {
+// 	outline: 1px solid black;
+// }

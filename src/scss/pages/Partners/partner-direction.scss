@@ -1,0 +1,40 @@
+.partner-direction {
+	padding-top: 200px;
+	padding-bottom: 205px;
+	background-color: $bgcFooter;
+	@include _pt210;
+	.partner__direction {
+		&-title {
+			color: $white;
+			margin-bottom: 45px;
+			@include _fz100;
+			@include _568 {
+				font-size: 30px;
+			}
+		}
+
+		&-lists {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		&-item {
+			padding: 6px 8px;
+			background-color: $orange;
+			color: $white;
+			margin-bottom: 20px;
+			@include _fz30;
+			@include _568 {
+				font-size: 15px;
+			}
+			&:not(:last-child) {
+				margin-right: 25px;
+				@include _568 {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Normalize */
+@import 'base/normalize.scss';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins */
+@import 'base/mixins';
+
+/* Global */
+@import 'base/global';
+
+/* Butttons */
+@import 'base/buttons.scss';
+
+/* Animate */
+@import 'base/animate';
+
+/* Container */
+@import 'base/container.scss';
+
+/* Modules */
+
+/* HomePage */
+@import 'pages/HomePage/academy';
+@import 'pages/HomePage/banner';
+@import 'pages/HomePage/blog';
+@import 'pages/HomePage/career-garpix';
+@import 'pages/HomePage/cases';
+@import 'pages/HomePage/clients';
+@import 'pages/HomePage/company';
+@import 'pages/HomePage/gls';
+@import 'pages/HomePage/partner';
+@import 'pages/HomePage/services';
+@import 'pages/HomePage/staff';
+@import 'pages/HomePage/start-project';
+
+/* components */
+@import 'components/Header/header';
+@import 'components/Footer/footer';
+@import 'components/Menu/menu';
+@import 'components/Modal/modal';
+@import 'components/Video/video';
+@import 'components/More/more';
+@import 'components/BannerCases/banner-cases';
+@import 'components/ProductTeam/product-team.scss';
+@import 'components/SliderRight/slider-right.scss';
+@import 'components/SliderLeft/slider-left.scss';
+@import 'components/SliderSwiper/slider-swiper.scss';
+@import 'components/Results/results.scss';
+@import './components/ProjectObjectives/project-objectives.scss';
+
+/* cases */
+@import 'pages/Cases/cases-page';
+
+/* blog */
+@import 'pages/Blog/blog-page';
+
+/* services */
+@import 'pages/Services/services-page.scss';
+
+/* vacancy */
+@import 'pages/Vacancy/vacancy-garpix';
+@import 'pages/Vacancy/vacancy-top';
+@import 'pages/Vacancy/vacancy__info-resume';
+@import 'pages/Vacancy/vacany-aside';
+@import 'pages/Vacancy/vacancy-candidate';
+@import 'pages/Vacancy/vacancy-plus';
+@import 'pages/Vacancy/vacancy__aside-about';
+@import 'pages/Vacancy/vacancy-all';
+
+/* career */
+@import 'pages/Career/career-banner';
+@import 'pages/Career/career-summary';
+@import 'pages/Career/career-photo';
+@import 'pages/Career/career-work';
+@import 'pages/Career/career-relax';
+
+/*  article  */
+@import 'pages/Article/article-article.scss';
+@import 'pages/Article/article-laptop.scss';
+@import 'pages/Article/article-webview.scss';
+@import 'pages/Article/article-albert.scss';
+
+/* partners */
+@import 'pages/Partners/partner-who.scss';
+@import 'pages/Partners/partner-direction.scss';
+@import 'pages/Partners/partner-group.scss';
+@import 'pages/Partners/partner-top.scss';
+@import 'pages/Partners/partner-variant.scss';
+@import 'pages/Partners/partner-gives.scss';
+
+/*  vacancy-catalog  */
+@import 'pages/VacancyCatalog/vacancy-catalog.scss';
+
+/* CasePort */
+@import 'pages/CasePort/port-developed';
+@import 'pages/CasePort/port-realization';
+@import 'pages/CasePort/port-1C';
+@import 'pages/CasePort/port-results';
+
+/* CaseDiletant */
+@import 'pages/CaseDiletant/diletant-completed';
+@import 'pages/CaseDiletant/diletant-project';
+
+/* CaseSport */
+@import 'pages/CaseSport/case-sport-stage';
+
+/* CaseBleckmann */
+@import 'pages/CaseBleckmann/bleckmann-slider';
+@import 'pages/CaseBleckmann/bleckmenn-problem';
+@import 'pages/CaseBleckmann/bleckmenn-result';
+
+/*    CasePakpakych    */ 
+@import 'pages/CasePakpakych/Case-pakpakych';
+
+/*  Case-sewing   */ 
+@import 'pages/caseSewing/case-sewing';
+@import 'pages/caseSewing/sewing-slide';
+@import 'pages/caseSewing/sewing-result';
+
+.hidden {
+	display: none;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 32px;
+	right: 5px;
+	pointer-events: none;
+	z-index: 2;
+	&.icon-success {
+		fill: green;
+		position: absolute;
+		top: -47px;
+	}
+
+	&.icon-error {
+		fill: red;
+	}
+}
+
+.label {
+	font-weight: bold;
+	display: block;
+	color: #333;
+	color: #2d3748;
+}
+
+.input {
+	appearance: none;
+	display: block;
+	width: 100%;
+	height: 70px;
+	border-radius: 0.25rem;
+	background: transparent;
+	&.input-error {
+		border: 1px solid red;
+
+		&:focus {
+			border: 1px solid red;
+		}
+	}
+
+	&:focus {
+		outline: none;
+		border: 1px solid #a0aec0;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+			0 1px 2px 0 rgba(0, 0, 0, 0.06);
+		background-clip: padding-box;
+	}
+}
+
+.error-message {
+	position: absolute;
+	font-size: 0.85rem;
+	color: red;
+}

@@ -1,0 +1,139 @@
+.career {
+	background-color: $black;
+	padding: 100px 100px 140px 100px;
+	@include _1024 {
+		padding: 0 50px;
+	}
+	@include _768 {
+		padding: 0px;
+	}
+	@include _pt140;
+	&-wrapper {
+		@include _1600 {
+			flex-direction: column;
+			margin: 0 auto;
+		}
+	}
+	&__border {
+		margin-top: 80px;
+		background-color: $white;
+		opacity: 0.25;
+		max-width: 1470px;
+		height: 1px;
+	}
+	&-join {
+		display: flex;
+		justify-content: space-between;
+		z-index: 20;
+		position: relative;
+		@include _1600 {
+			display: flex;
+			max-width: 1000px;
+			padding-bottom: 50px;
+			margin: 0 auto;
+			grid-gap: 30px;
+		}
+		@include _1400 {
+			grid-gap: 20px;
+		}
+		@include _1024 {
+			flex-direction: column;
+			grid-gap: 50px;
+		}
+		@include _350 {
+			padding-bottom: 60px;
+		}
+		&__title {
+			font-weight: 700;
+			line-height: 120%;
+			color: $white;
+			margin-top: 80px;
+			@include _fz100;
+			@include _350 {
+				margin-top: 60px;
+			}
+		}
+		&__text {
+			margin-top: 10px;
+			color: $white;
+			opacity: 0.75;
+			@include _fz30;
+		}
+		&__btn {
+			margin-top: 96px;
+			margin-right: 50px;
+			min-width: 430px;
+			@include _1024 {
+				display: none;
+			}
+		}
+	}
+	&-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		@include _768 {
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		}
+		grid-column-gap: 25px;
+		margin-top: 60px;
+		@include _1600 {
+			text-align: left;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+		@include _1024 {
+			max-width: auto;
+		}
+		@include _768 {
+			flex-direction: column;
+			grid-gap: 40px;
+		}
+		&__svg {
+			transform: scale(0.8);
+		}
+		&__text {
+			color: $white;
+			margin-top: 10px;
+			font-weight: 400;
+			line-height: 130%;
+			@include _fz20;
+		}
+	}
+	&-jobs {
+		margin-top: 50px;
+		@include _350 {
+			margin-top: 40px;
+		}
+		&__headline {
+			color: $white;
+			@include _fz30;
+		}
+		&-list {
+			display: flex;
+			max-width: 1450px;
+			flex-wrap: wrap;
+			&__item {
+				background-color: #181d27;
+				color: $white;
+				margin-right: 20px;
+				margin-top: 20px;
+				@include _fz20;
+				@include _350 {
+					margin-right: 10px;
+					margin-top: 10px;
+				}
+				&:last-child {
+					background-color: $orange;
+				}
+			}
+		}
+		&__vacancy {
+			margin: 6px 8px;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			@include _fz20;
+			line-height: 130%;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.project__objectives {
+
+    &-analysis-title {
+        color: $textColorArtServCareer;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 10px;
+        @include _fz30;
+    }
+
+    &-analysis-desc {
+        color: #181D27;
+        max-width: 990px;
+        opacity: 0.75;
+        margin-bottom: 80px;
+        @include _fz18;
+    }
+
+    &-conclusion-title {
+        margin-bottom: 20px;
+        @include _fz30;
+    }
+
+    &-conclusion-item {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: #181D27;
+        opacity: 0.75;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &:first-child{
+            margin-bottom: 20px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #E50328;
+            margin-right: 20px;
+        }
+    }
+}

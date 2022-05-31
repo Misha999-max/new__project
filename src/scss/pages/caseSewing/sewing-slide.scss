@@ -1,0 +1,42 @@
+.sewing-slide {
+    padding-top: 160px;
+    padding-bottom: 120px;
+}
+
+.sewing {
+
+		&__slide {
+		}
+
+		&__slide-title {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 130%;
+            color: #181D27;
+            margin-bottom: 20px;
+		}
+
+		&__slide-list {
+            margin-bottom: 40px;
+		}
+
+		&__slide-item {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 130%;
+            color: #181D27;
+            opacity: 0.75;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+            &::before {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: #222222;;
+                margin-right: 20px;
+            }
+		}
+}

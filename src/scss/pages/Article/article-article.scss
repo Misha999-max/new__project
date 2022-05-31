@@ -1,0 +1,45 @@
+.article {
+	&__top-nav {
+		margin-top: 60px;
+	}
+	&__top-lists {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__top-item {
+		margin-right: 10px;
+		a {
+			color: $black;
+			transition: all 1s;
+			&:hover {
+				color: $orange;
+			}
+		}
+		&:not(:last-child)::after {
+			content: '/';
+		}
+	}
+
+	&__top-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		&-date {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 140%;
+			color: $textColorArtServCareer;
+			opacity: 0.35;
+		}
+
+		&-develop {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			color: $orange;
+		}
+	}
+}

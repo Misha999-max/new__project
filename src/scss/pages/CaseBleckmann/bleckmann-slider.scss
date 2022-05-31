@@ -1,0 +1,84 @@
+.bleckmenn-project{
+    padding: 120px 0px;
+    background-position: bottom;
+    @include _568 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .bleckmenn__project{
+        &-title{
+            @include _fz100;
+            color: $white;
+        }
+        &-text {
+            max-width: 1200px;
+            margin-bottom: 40px;
+            color: $white;
+            line-height: 130%;
+            font-weight: 400;
+            @include _fz30;
+            @include _568 {
+                margin-bottom: 20px;
+            }
+        }
+        &-text-right { 
+            max-width: 1200px;
+            margin-bottom: 40px;
+            color: $white;
+            margin-left: 20%;
+            font-weight: 400;
+            line-height: 130%;
+            @include _fz30;
+            @include _568 {
+                margin-bottom: 20px;
+            }
+        }
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            @include _1200 {
+                flex-wrap: wrap;
+            }
+            &-title{
+                color: $white;
+                margin-bottom: 20px;
+                @include _fz30;
+            }
+            &-img{
+                display: block;
+                border: 7px solid #181D27;
+                border-radius: 34px;
+            }
+            &-item {
+                color: $white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 20px;
+                @include _fz20;
+                @include _568 {
+                    font-size: 15px;
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #001A4B;
+                    margin-right: 20px;
+                    @include _1200 {
+                        margin-right: 10px;
+                        font-size: 15px;
+                    }
+                    @include _1200 {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+             }
+        }
+        
+    }
+}

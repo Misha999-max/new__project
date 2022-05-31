@@ -1,0 +1,134 @@
+.port-realization {
+	background: #1a365e;
+	padding-top: 150px;
+	padding-bottom: 190px;
+	@include _1024 {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@include _568 {
+		padding-top: 60px;
+		padding-bottom: 50px;
+	}
+	&__title {
+		@include _fz100;
+		color: $white;
+		@include _350 {
+			font-size: 50px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		@include _1024 {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+	&__behavior {
+		background: #1c3b69;
+		margin-top: 80px;
+		padding: 99px 145px;
+		@include _1200 {
+			padding: 60px 100px;
+		}
+		@include _1024 {
+			padding: 149px 12px 60px 20px;
+			margin-top: 0;
+			order: 2;
+		}
+		@include _400 {
+		}
+		&-subtitle {
+			color: $white;
+			@include _fz30;
+			line-height: 130%;
+		}
+		&-description {
+			margin-top: 10px;
+			color: $white;
+			opacity: 0.75;
+			max-width: 995px;
+			@include _fz20;
+			line-height: 150%;
+		}
+	}
+	&__progressbar {
+		position: relative;
+		width: min-content;
+		transform: translate(-80px, 30px);
+		margin-right: 100px;
+		@include _1200 {
+			transform: translate(-40px, 30px);
+			margin-right: 140px;
+		}
+		@include _1024 {
+			transform: translate(0, 94px);
+			margin-right: 0;
+			order: 1;
+		}
+		&-client1 {
+			position: absolute;
+			top: 0%;
+			right: -66%;
+			z-index: 10;
+			@include _568 {
+				left: 30%;
+				transform: scale(0.8);
+			}
+		}
+		&-client2 {
+			position: absolute;
+			top: 80%;
+			right: -66%;
+			@include _568 {
+				left: 30%;
+				transform: scale(0.8);
+			}
+		}
+	}
+}
+
+.semiBarTop {
+	width: 300px;
+	height: 100px;
+	margin: 50px auto;
+	transform: translate(10px, -10px);
+	@include _568 {
+		width: 213px;
+		height: 81px;
+		margin-bottom: 0;
+	}
+}
+
+#semiBarBottom {
+	width: 280px;
+	height: 100px;
+	margin: 50px auto;
+	transform: rotateX(180deg) translate(10px, -29px);
+	@include _568 {
+		width: 200px;
+		height: 95px;
+		margin-top: 0;
+		transform: rotateX(180deg) translate(10px, -20px);
+	}
+}
+
+.progressbar-text {
+	position: absolute;
+	left: 50%;
+	top: 116% !important;
+	padding: 0px;
+	margin: 0px;
+	transform: translate(-50%, 0px);
+	color: rgb(0, 183, 226);
+	bottom: 0px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 60px;
+	color: #ffffff !important;
+	@include _568 {
+		font-size: 20px;
+		top: 75px !important;
+	}
+}

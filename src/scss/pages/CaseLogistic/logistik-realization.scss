@@ -1,0 +1,62 @@
+.logistik-realization {
+    background: #4036ba;
+    padding-top: 120px;
+    padding-bottom: 41px;
+    padding: 120px 0 41px;
+    @include _1024 {
+        padding: 90px 0 30px;
+    }
+    @include _568 {
+        padding-top: 50px;
+    }
+    &__title {
+      @include _fz100;
+      color: white;
+      margin-bottom: 40px;
+    }
+    &__functional {
+      @include _fz38;
+      color: white;
+      margin-bottom: 20px;
+    }
+    &__wrapper {
+      display: flex;
+      grid-gap: 20px;
+      margin-bottom: 20px;
+      @include _568 {
+          flex-direction: column;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 20px;
+      width: 850px;
+      @include _568 {
+          width: auto;
+      }
+    }
+    &__item {
+      display: flex;
+      grid-gap: 20px;
+      align-items: center;
+    }
+    &__square {
+      min-width: 15px;
+      height: 15px;
+      background-color: #24d7ff;
+    }
+    &__text {
+      color: white;
+      font-family: "Muller";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 130%;
+    }
+    &__webinar {
+        color: white;
+        @include _fz30;
+    }
+  }
+  

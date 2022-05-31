@@ -1,0 +1,104 @@
+.logistik-technologies {
+    padding-bottom: 100px;
+    background-color: #4036ba;
+    @include _1024 {
+      padding-bottom: 70px;
+    }
+    @include _568 {
+      padding-bottom: 40px;
+    }
+    .container {
+      display: flex;
+      position: relative;
+    }
+    &__flowers {
+      background: url("../images/logistik-technologies-flowers-left.jpg")
+        no-repeat;
+      background-position: top;
+      background-size: 1920px 707px;
+    }
+    &__title {
+      padding-top: 96px;
+      color: white;
+      @include _fz100;
+      @include _1024 {
+        padding-top: 70px;
+      }
+      @include _568 {
+        padding-top: 40px;
+      }
+      &-continue {
+        color: white;
+        @include _fz44;
+        margin-bottom: 24px;
+      }
+    }
+    &__list {
+      margin-left: 40px;
+      margin-bottom: 337px;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 10px;
+      @include _568 {
+        margin-bottom: 50px;
+        margin-left: 20px;
+      }
+    }
+    &__item {
+    }
+    &__text {
+      color: white;
+      @include _fz30;
+    }
+    &__time {
+      color: white;
+      font-family: "Muller";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 130%;
+      margin-bottom: 20px;
+    }
+    &__months {
+      color: #24d7ff;
+      font-family: "Muller";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 80px;
+      line-height: 130%;
+      margin-bottom: 20px;
+      @include _1024 {
+        font-size: 60px;
+      }
+      @include _568 {
+        font-size: 40px;
+      }
+    }
+    &__mvp {
+      color: white;
+      @include _fz30;
+    }
+    &__img {
+      position: absolute;
+      right: -249px;
+      top: -50px;
+      display: block;
+      width: 76%;
+      @include _1400 {
+        top: 150px;
+      }
+      @include _1024 {
+        top: 250px;
+      }
+      @include _768 {
+        top: 350px;
+        right: -150px;
+      }
+      @include _568 {
+        position: static;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  

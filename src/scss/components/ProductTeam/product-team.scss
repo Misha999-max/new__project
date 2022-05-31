@@ -1,0 +1,31 @@
+.prouduct-team {
+	background-color: #f6f6f7;
+	padding: 125px 0 173px;
+	@include _568 {
+		padding: 25px 0 20px;	
+	}
+	&__title {
+		width: fit-content;
+		@include _fz100;
+		@include _768 {
+			font-size: 40px;
+		}
+	}
+	&__list {
+		margin-top: 60px;
+		width: min-content;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+		&-item {
+			background-color: $white;
+			padding: 6px;
+			width: max-content;
+			@include _fz30;
+		}
+		@include _1600 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}

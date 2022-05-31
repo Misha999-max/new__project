@@ -1,0 +1,101 @@
+.video {
+	background-color: $black;
+	position: relative;
+	&__wrap {
+		iframe {
+			width: 100%;
+			height: 100%;
+			height: 960px;
+			@include _1400 {
+				height: 760px;
+			}
+			@include _1200 {
+				height: 660px;
+			}
+			@include _1024 {
+				height: 560px;
+			}
+			@include _768 {
+				height: 460px;
+			}
+			@include _568 {
+				height: 360px;
+			}
+			@include _400 {
+				height: 260px;
+			}
+		}
+		@include _1024 {
+			transform: translateY(-50px);
+		}
+		@include _768 {
+			transform: translateY(-30px);
+		}
+		@include _400 {
+			transform: translateY(-17px);
+		}
+	}
+	&__img {
+		z-index: 20;
+		border-radius: 30px;
+	}
+	&__button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		z-index: 20;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		@include _1400 {
+			transform: translateY(-50%) translateX(-50%);
+		}
+		@include _1200 {
+			transform: translateY(-50%) translateX(-50%);
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-left: 26px solid $white;
+			left: 80%;
+			z-index: 2;
+			@include _1200 {
+				left: 75%;
+			}
+			@include _568 {
+				left: 70%;
+			}
+		}
+		&-text {
+			color: $white;
+			font-weight: 700;
+			font-size: 44px;
+			line-height: 120%;
+			@include _fz44;
+			@include _568 {
+				font-size: 20px;
+			}
+		}
+		&-btn {
+			width: 94px;
+			height: 94px;
+			@include _1200 {
+				transform: scale(0.9);
+			}
+			@include _768 {
+				transform: scale(0.7);
+			}
+			@include _568 {
+				transform: scale(0.5);
+			}
+		}
+	}
+}
+
+.dad {
+	background: url('../images/team.jpg') no-repeat;
+}

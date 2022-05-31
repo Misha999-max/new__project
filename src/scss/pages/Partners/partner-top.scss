@@ -1,0 +1,126 @@
+.partner-top {
+	background-color: $bgcFooter;
+	padding-top: 200px;
+	padding-bottom: 45px;
+	border-bottom: 4px solid $white;
+	@include _pt210;
+	.partner__top {
+		&-banner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include _1200 {
+				flex-wrap: wrap;
+			}
+		}
+		&-left-img {
+			max-width: 100%;
+			@include _768 {
+				transform: scale(0.6);
+			}
+		}
+
+		&-logo {
+			color: $white;
+			margin-bottom: 50px;
+			text-transform: uppercase;
+			@include _fz100;
+			@include _1024 {
+				font-size: 80px;
+				text-align: center;
+			}
+			@include _400 {
+				font-size: 60px;
+			}
+		}
+
+		&-info {
+			@include _fz20;
+			color: $white;
+			opacity: 0.75;
+			margin-bottom: 50px;
+			margin-left: 70px;
+			border-left: 1px solid rgba(255, 255, 255, 0.25);
+			padding-left: 20px;
+			@include _fz18;
+			@include _1200 {
+				margin-left: 0;
+			}
+		}
+		&-btn {
+			margin-left: 65px;
+			@include _1200 {
+				margin-bottom: 40px;
+				margin-left: 10px;
+				max-width: 70%;
+			}
+		}
+
+		&-foto {
+			position: relative;
+			margin-left: 180px;
+			background-color: #141821;
+			padding: 20px;
+			max-width: 570px;
+			@include _1200 {
+				margin-top: 200px;
+				margin-left: 10px;
+			}
+		}
+		&-text {
+			position: absolute;
+			max-width: 360px;
+			padding: 22px 25px;
+			background-color: #141821;
+			color: $white;
+			top: -140px;
+			left: -200px;
+			@include _fz20;
+			@include _1200 {
+				top: -200px;
+				left: -10px;
+				padding: 10px;
+			}
+			@include _400 {
+				font-size: 15px;
+			}
+		}
+		&-name {
+			@include _fz30;
+			color: $white;
+			@include _fz30;
+		}
+		&-desc {
+			color: $white;
+			@include _fz16;
+		}
+		&-img {
+			margin-top: -140px;
+			@include _1200 {
+				margin-top: -100px;
+			}
+		}
+
+		&-svg {
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			@include _400 {
+				transform: scale(0.8);
+				top: 25%;
+				right: 10px;
+			}
+		}
+		&-number {
+			position: absolute;
+			right: 10px;
+			top: 10%;
+			color: $orange;
+			@include _fz100;
+			@include _1200 {
+				top: 30%;
+				right: 30%;
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+.case-peculiarities {
+    background-image:url("../images/peculiarities-bg.png"); 
+    
+}
+.case {
+		&__peculiarities {          
+            padding-top: 100px;
+            padding-bottom: 60px;
+            background-position: 50% 50%;
+            background-repeat:no-repeat;
+            &-title {
+                font-weight: 700;
+                line-height: 120%;
+                @include _fz100;
+            }
+            &-desc {
+                font-weight: 400;
+                line-height: 130%;
+                @include _fz30;
+            }
+            &-banner{
+                transform: scale(0.6);
+                margin-top: 70px;
+                img{
+                    width: 100%;
+                }
+            }
+            &-calculator{
+                max-width: 1235px;
+                padding-bottom: 70px;
+                &-title{
+                    font-weight: 700;
+                    line-height: 130%;
+                    margin-bottom: 20px;
+                    @include _fz44;
+                }
+                &-desc{
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 130%;
+                }
+            }
+            &-info{
+                margin-top: 120px;
+                margin-bottom: 60px;
+                display: flex;
+                justify-content: flex-end;
+                max-width: 1290px;
+                &-text{
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 130%;
+                }
+            }
+		}
+      
+		
+}
+.case__packpakych{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-img {
+         margin-top:-100px;
+         margin-left: -100px;
+    }
+    &-result{
+        margin-left: 140px;
+    }
+    &-list {
+        margin-bottom: 120px;
+    }
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &-number{
+        font-weight: 500;
+        font-size: 74px;
+        line-height: 130%;
+        color: #F8F8FA;
+    }
+    &-listtext{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: #181D27;
+        margin-left: 20px;
+    }
+}
+

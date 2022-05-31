@@ -1,0 +1,43 @@
+.sewing-objectives{
+    background-color:#F6F6F7;
+    overflow-y: hidden;
+}
+
+.sewing__objectives{
+    position: relative;
+
+    &-img{
+        top: 0px;
+    }
+    &-list{
+
+    }
+    &-item{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: #181D27;
+        opacity: 0.75;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #222222;;
+            margin-right: 20px;
+        }
+    }
+    &-desc-top{
+        max-width: 1000px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        color: #181D27;
+        opacity: 0.75;
+        margin-top: 20px;
+    }
+}

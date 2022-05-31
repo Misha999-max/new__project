@@ -1,0 +1,194 @@
+.partner {
+	background-color: $black;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		justify-items: start;
+		align-items: start;
+		grid-gap: 30px;
+		padding: 100px 0px 180px 0px;
+		@include _pt100;
+		@include _1200 {
+			grid-template-columns: auto;
+			grid-gap: 40px;
+			padding-bottom: 50px;
+		}
+		@include _768 {
+			grid-gap: 20px;
+		}
+	}
+
+	&-left {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		&__title {
+			color: $white;
+			margin-bottom: 20px;
+			font-weight: 700;
+			line-height: 120%;
+			@include _fz100;
+		}
+		&__description {
+			color: $white;
+			max-width: 560px;
+			opacity: 0.75;
+			line-height: 150%;
+			font-weight: 400;
+			font-size: 18px;
+		}
+		&__btn {
+			margin-top: 30px;
+		}
+	}
+	&-right {
+		position: relative;
+		&__quote {
+			position: absolute;
+			left: -60px;
+			top: 50px;
+			background-color: #141821;
+			padding: 20px;
+			transform: translateX(-15px);
+			color: $white;
+			@include _fz20;
+			@include _1600 {
+				display: none;
+			}
+		}
+		&-list {
+			padding-left: 45px;
+			padding-top: 90px;
+			@include _768 {
+				padding-left: 10px;
+				padding-top: 20px;
+			}
+		}
+		&__item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+			&:first-child {
+				margin-top: 120px;
+			}
+			@include _1400 {
+				justify-content: flex-start;
+				margin-top: 30px;
+			}
+			@include _568 {
+				margin-top: 20px;
+			}
+		}
+		&__item:last-child {
+			margin-bottom: 0;
+		}
+
+		&__number {
+			color: $orange;
+			margin-right: 30px;
+			@include _fz74;
+		}
+
+		&__advantage {
+			color: $white;
+			@include _fz20;
+		}
+	}
+	&-center {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		@include _568 {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+		border: 1px solid inherit;
+		margin-top: 200px;
+		margin-right: 40px;
+		background-color: #141821;
+		max-width: 434px;
+		height: 460px;
+		position: relative;
+		@include _1200 {
+			margin-top: 20px;
+			height: auto;
+		}
+		&__svg {
+			position: absolute;
+			top: 40%;
+			left: 60%;
+			@include _1600 {
+				top: 50%;
+			}
+			@include _1200 {
+				top: 60%;
+			}
+			@include _568 {
+				top: 50%;
+				left: 64%;
+			}
+			@include _400 {
+				top: 40%;
+			}
+			svg {
+				@include _1200 {
+					width: 25vw;
+				}
+			}
+		}
+
+		&__number {
+			font-weight: bold;
+			font-size: 100px;
+			line-height: 130%;
+			color: $orange;
+			position: absolute;
+			top: 2%;
+			right: 35%;
+			@include _1200 {
+				top: 4%;
+				right: 50%;
+			}
+			@include _1024 {
+				font-size: 80px;
+			}
+			@include _768 {
+				top: 12%;
+			}
+			@include _568 {
+				top: 20%;
+				font-size: 70px;
+			}
+			@include _400 {
+				font-size: 55px;
+			}
+		}
+
+		&__img {
+			display: block;
+			width: 100%;
+			margin-top: -200px;
+			transform: scale(1.2);
+			@include _1200 {
+				transform: scale(0.8);
+				margin-top: -40px;
+				margin-bottom: 20px;
+			}
+		}
+		&__title {
+			position: absolute;
+			color: $white;
+			bottom: 100px;
+			left: 20px;
+			@include _fz30;
+		}
+		&__text {
+			position: absolute;
+			bottom: 40px;
+			left: 20px;
+			color: $white;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 130%;
+		}
+	}
+}

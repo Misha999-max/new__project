@@ -1,0 +1,70 @@
+.sewing-result{
+    padding-top: 160px;
+    padding-bottom: 120px;
+}
+
+.sewing__result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    &-wrapper {
+        margin-left: 160px;
+    }
+    &-left{
+        margin-top: 100px;
+		position: relative;
+	}
+	&-img-treug{
+		position: absolute;
+        top: -400px;
+        left: -180px;
+        opacity: 0;
+        transform: scale(0);
+	}
+    &-list {
+      margin-bottom: 170px;  
+    }
+    &-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-img{
+        
+    }
+    &-number{
+        line-height: 130%;
+        font-weight: 500;
+        @include _fz74;
+    }
+    &-listtext{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 130%;
+        margin-left: 20px;
+    }
+    &-list-bottom{
+        margin-top: 20px;
+    }
+    &-item-bottom{
+        font-weight: 400;
+        line-height: 130%;
+        @include _fz30;
+        color: #FFFFFF;
+        opacity: 0.75;
+        opacity: 0.75;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #F3F4F1;
+            margin-right: 20px;
+        }
+    }   
+}

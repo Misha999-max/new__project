@@ -1,0 +1,87 @@
+.bleckmenn__project {
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        @include _1200 {
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        &-img{
+            @include _1200 {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &-item {
+        font-weight: 400;
+        line-height: 130%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include _fz20;
+        @include _568 {
+            font-size: 13px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #176ABD;
+            margin-right: 20px;
+            @include _568 {
+                width: 5px;
+                height: 5px;
+                margin-right: 5px;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    &-quote {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 16px 50px 80px 35px;
+        background-color: #fff;
+        max-width: 1200px;
+        @include _1200 {
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+        }
+        &-wrapper{
+            margin-top: 80px;
+            margin-left: 40px;
+            @include _1200 {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+       
+        &-desc{
+            margin-bottom: 40px;
+            @include _fz30;
+            
+        }
+        &-name{
+            font-weight: 700;
+            line-height: 130%;
+            color:#181D27;
+            opacity: 0.75;
+            @include _fz20;
+        }
+        &-who{
+            font-weight: 400;
+            line-height: 150%;
+            display: block;
+            color:#181D27;
+            opacity: 0.75;
+            @include _fz16;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.port-1C {
+	background: url('../images/background-1c.jpg') no-repeat 50% / cover;
+	min-height: 100vh;
+	padding-top: 143px;
+	padding: 143px 255px 0 435px;
+	@include _1600 {
+		padding: 120px 150px 0 250px;
+	}
+	@include _1400 {
+		padding: 100px 50px 0 150px;
+	}
+	@include _1200 {
+		padding: 80px 25px 0 50px;
+	}
+	@include _1024 {
+		padding: 60px 16px 0 16px;
+		height: 900px;
+	}
+	@include _768 {
+		height: 791px;
+	}
+	&__title {
+		@include _fz30;
+		color: $white;
+		max-width: 900px;
+	}
+	&__list {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		grid-gap: 5px;
+		&-item {
+			display: flex;
+			align-items: center;
+			grid-gap: 20px;
+		}
+		&-number {
+			color: #009dd4;
+			@include _fz74;
+		}
+		&-text {
+			color: $white;
+			@include _fz20;
+		}
+	}
+	&__description {
+		margin-top: 40px;
+		color: $white;
+		opacity: 0.75;
+		@include _fz20;
+	}
+	&__img {
+		@include _768 {
+			width: 178px;
+			align-self: flex-end;
+			margin-bottom: -90px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		@include _768 {
+			flex-direction: column;
+		}
+	}
+}

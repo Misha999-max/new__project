@@ -1,0 +1,254 @@
+@keyframes circling {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes scroll {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: -3000px;
+	}
+}
+
+@keyframes reverseScroll {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: 3000px;
+	}
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+	}
+}
+
+//circling
+.circle {
+	animation-name: circling;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.arrow {
+	position: absolute;
+	top: 24%;
+	right: 34%;
+	&--right {
+		transform: rotate(-90deg);
+	}
+}
+
+//scroll & reverseScroll
+.scroll {
+	animation-name: scroll;
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.reverse-scroll {
+	animation-name: reverseScroll;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+//cube
+.side,
+.cube {
+	width: 23em;
+	height: 23em;
+	position: fixed;
+	@include _1600 {
+		width: 20em;
+		height: 20em;
+	}
+	@include _1200 {
+		width: 17.5em;
+		height: 17.5em;
+	}
+	@include _768 {
+		width: 15em;
+		height: 15em;
+	}
+	@include _568 {
+		width: 12.5em;
+		height: 12.5em;
+	}
+}
+.cube {
+	transform-style: preserve-3d;
+	animation: rotate 30s infinite linear;
+	position: absolute;
+	left: 13%;
+	top: 12%;
+	@include _768 {
+		left: 7%;
+	}
+	@include _568 {
+		left: 1%;
+		top: 6%;
+	}
+}
+.cube:before,
+.cube:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 23em;
+	height: 23em;
+	@include _1600 {
+		width: 20em;
+		height: 20em;
+	}
+	@include _1200 {
+		width: 17.5em;
+		height: 17.5em;
+	}
+	@include _768 {
+		width: 15em;
+		height: 15em;
+	}
+	@include _568 {
+		width: 12.5em;
+		height: 12.5em;
+	}
+}
+.cube:before {
+	transform: rotateX(90deg);
+}
+.cube:after {
+	transform: rotatey(90deg);
+}
+
+.side {
+	position: absolute;
+	width: 23em;
+	height: 23em;
+	@include _1600 {
+		width: 20em;
+		height: 20em;
+	}
+	@include _1200 {
+		width: 17.5em;
+		height: 17.5em;
+	}
+	@include _768 {
+		width: 15em;
+		height: 15em;
+	}
+	@include _568 {
+		width: 12.5em;
+		height: 12.5em;
+	}
+}
+
+.back {
+	transform: translateZ(-11.5em);
+	background: #ff8800;
+	@include _1600 {
+		transform: translateZ(-10em);
+	}
+	@include _1200 {
+		transform: translateZ(-8.75em);
+	}
+	@include _768 {
+		transform: translateZ(-7.5em);
+	}
+	@include _568 {
+		transform: translateZ(-6.25em);
+	}
+}
+
+.left {
+	transform: translateX(-11.5em) rotateY(90deg);
+	background: #cd6d00;
+	@include _1600 {
+		transform: translateX(-10em) rotateY(90deg);
+	}
+	@include _1200 {
+		transform: translateX(-8.75em) rotateY(90deg);
+	}
+	@include _768 {
+		transform: translateX(-7.5em) rotateY(90deg);
+	}
+	@include _568 {
+		transform: translateX(-6.25em) rotateY(90deg);
+	}
+}
+
+.right {
+	transform: translateX(11.5em) rotateY(90deg);
+	background: #cd6d00;
+	@include _1600 {
+		transform: translateX(10em) rotateY(90deg);
+	}
+	@include _1200 {
+		transform: translateX(8.75em) rotateY(90deg);
+	}
+	@include _768 {
+		transform: translateX(7.5em) rotateY(90deg);
+	}
+	@include _568 {
+		transform: translateX(6.25em) rotateY(90deg);
+	}
+}
+.top {
+	transform: translateY(-11.5em) rotateX(90deg);
+	background: #ee7f00;
+	@include _1600 {
+		transform: translateY(-10em) rotateX(90deg);
+	}
+	@include _1200 {
+		transform: translateY(-8.75em) rotateX(90deg);
+	}
+	@include _768 {
+		transform: translateY(-7.5em) rotateX(90deg);
+	}
+	@include _568 {
+		transform: translateY(-6.25em) rotateX(90deg);
+	}
+}
+
+.bottom {
+	transform: translateY(11.5em) rotateX(90deg);
+	background: #ee7f00;
+	@include _1600 {
+		transform: translateY(10em) rotateX(90deg);
+	}
+	@include _1200 {
+		transform: translateY(8.75em) rotateX(90deg);
+	}
+	@include _768 {
+		transform: translateY(7.5em) rotateX(90deg);
+	}
+	@include _568 {
+		transform: translateY(6.25em) rotateX(90deg);
+	}
+}
+
+.front {
+	transform: translateZ(11.5em);
+	background: #ff8800;
+	@include _1600 {
+		transform: translateZ(10em);
+	}
+	@include _1200 {
+		transform: translateZ(8.75em);
+	}
+	@include _768 {
+		transform: translateZ(7.5em);
+	}
+	@include _568 {
+		transform: translateZ(6.25em);
+	}
+}

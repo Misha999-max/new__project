@@ -1,0 +1,39 @@
+.project-objectives{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    @include _1400{
+        padding-top: 230px;
+    }
+    
+&-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include _1600 {
+        transform: scale(0.4);
+    }
+    @include _1400 {
+        top: -600px;
+        right: -150px;
+    }
+}
+    .project__objectives{
+        &-title{
+            margin-bottom: 40px;
+            @include _fz100;
+        }
+
+        &-desc-top, &-desc {
+            max-width: 990px;
+            max-width: 990px;
+            color: #181D27;
+            margin-bottom: 70px;
+            @include _fz20;
+        }
+        &-desc-top {
+            opacity: 0.75;
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.slider-right {
+	overflow: hidden;
+	&__list {
+		transform: translateX(30%);
+		display: flex;
+		grid-gap: 60px;
+		img {
+			border: 5px solid #181D27;
+			border-radius: 25px;
+			@include _568 {
+				max-width: 80vw;
+			}
+		}
+		@include _568 {
+			grid-gap: 25px;
+			transform: translateX(5%);
+		}
+	}
+}

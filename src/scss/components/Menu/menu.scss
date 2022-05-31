@@ -1,0 +1,174 @@
+.menu {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100vh;
+	visibility: hidden;
+	transition: all 0.8s;
+	opacity: 0;
+	z-index: 100;
+	transform: translateZ(300px);
+	&.active {
+		left: 0;
+		visibility: visible;
+		opacity: 1;
+		overflow-y: scroll;
+	}
+	&__block {
+		width: 100%;
+		transition: all 0.6s;
+		background-color: $black;
+	}
+	&__wrapper-top {
+		display: flex;
+		flex-direction: column;
+		svg {
+			@include _1600 {
+				width: 30vw;
+			}
+			@include _1024 {
+				transform: translateY(-25px);
+			}
+		}
+	}
+	&__wrapper-bottom {
+		@media (max-width: 1339px) {
+			margin-top: 60px;
+		}
+	}
+	&__close {
+		display: block;
+		position: relative;
+		left: 70px;
+		top: -40px;
+		&--modal {
+			left: 20px;
+			top: -29px;
+		}
+		&::before,
+		&::after {
+			position: absolute;
+			content: ' ';
+			height: 55px;
+			width: 4px;
+			background-color: $orange;
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+	}
+	&__gamburger {
+		position: absolute;
+		right: 125px;
+		top: 30px;
+		cursor: pointer;
+		color: $orange;
+		border: none;
+		background: transparent;
+		font-weight: 500;
+		font-size: 20px;
+		&:hover {
+			.menu__gamburger-title {
+				color: btnColorOrangeHBA;
+			}
+		}
+		@include _768 {
+			right: 58px;
+		}
+	}
+	&__btn {
+		margin-top: 70px;
+		@include _1024 {
+			margin-top: 0px;
+		}
+	}
+	&__phone {
+		font-weight: bold;
+		font-size: 44px;
+		color: $orange;
+		line-height: 120%;
+		@include _fz44;
+	}
+	&__email {
+		display: block;
+		font-size: 30px;
+		color: $white;
+		cursor: pointer;
+		opacity: 0.75;
+		margin-top: 20px;
+		@include _fz30;
+	}
+	&__social {
+		display: flex;
+		margin-top: 58px;
+		font-size: 24px;
+		grid-gap: 70px;
+		flex-wrap: wrap;
+		@include _fz24;
+		&-link {
+			transition: all 1s;
+			opacity: 0.25;
+			color: $white;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	&__list {
+		@media (max-width: 1339px) {
+			margin-top: 50px;
+		}
+		&-item {
+			font-size: 44px;
+			border-bottom: 1px solid rgba(221, 193, 193, 0.25);
+			margin-top: 30px;
+			padding-bottom: 30px;
+			position: relative;
+			@include _fz44;
+			@media (max-width: 1360px) {
+				margin-top: 20px;
+			}
+		}
+		&-link {
+			color: $white;
+			transition: all 1s;
+			&:hover {
+				color: $orange;
+			}
+		}
+		&-summary {
+			cursor: pointer;
+			position: absolute;
+			right: 0px;
+			top: -12px;
+		}
+	}
+	&__wrapp {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 20px;
+		&-item {
+			margin-top: 20px;
+			max-width: 400px;
+		}
+		&-link {
+			font-size: 20px;
+			color: $white;
+			font-weight: normal;
+			line-height: 130%;
+			transition: all 1s;
+			@include _fz20;
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}

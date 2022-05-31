@@ -1,0 +1,43 @@
+.career-summary {
+	&__wrraper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 60px;
+		padding-bottom: 80px;
+		@include _1200 {
+			flex-wrap: wrap;
+		}
+		@include _568 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	&__left {
+		margin-right: 20px;
+		&-title {
+			margin-bottom: 40px;
+			color: $textColorArtServCareer;
+			@include _fz100;
+		}
+
+		&-desc {
+			@include _fz30;
+			margin-bottom: 10px;
+			color: $textColorArtServCareer;
+		}
+	}
+
+	&__right {
+		align-self: stretch;
+		padding: 40px 60px;
+		background-color: $bgcBlog;
+		@include _568 {
+			padding: 10px;
+		}
+		&-title {
+			@include _fz38;
+			margin-bottom: 30px;
+		}
+	}
+}

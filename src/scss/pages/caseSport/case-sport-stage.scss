@@ -1,0 +1,139 @@
+.sport-stage {
+    background-color: #2C3746;
+    &__integration{
+        padding-top: 160px;
+        padding-bottom: 120px;
+        background: url(../images/bgi-case-sport-bottom.png)center;
+        @include _pt140;
+    }
+    &__tehnology{
+        background: url(../images/bg-sport-tehnology.png);
+    }
+}
+.sport-stage__right{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #2C3746;
+}
+
+.sport__stage  {
+    padding-top: 150px;
+    padding-bottom: 60px;
+    @include _pt100;
+    
+    &-tehnology{
+        padding-top: 150px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include _pt140;
+        @include _1400 {
+            flex-wrap: wrap;
+        } 
+    }
+    &-title {
+        @include _fz100;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &-lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include _1400 {
+            flex-wrap: wrap;
+        }
+        @include _568 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    &-number {
+        @include _fz74;
+        color: $red;
+    }
+
+    &-text {
+        @include _fz20;
+        color: $white;
+        font-weight: 400;
+        line-height: 130%;
+        width: max-content;
+        margin-left: 30px;
+        @include _568 {
+            width: fit-content;
+        }
+    }
+
+    &-paragraff{
+        @include _fz44;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    &-description{
+        max-width: 1000px;
+        color: $white;
+        font-weight: 400;
+        line-height: 130%;
+        @include _fz30;
+    }
+
+    &-image{
+       border-radius: 10px;
+       @include _1400 {
+           margin-top: 30px;
+       }
+    }
+
+&-integration{
+    max-width: 950px;
+    padding: 55px 100px 90px 100px;
+    border: 0px solid inherit;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    @include _768 {
+        padding: 20px;
+    }
+    &-title {
+        font-weight: 700;
+        line-height: 130%;
+        color: #181D27;
+        margin-bottom: 10px;
+        @include _fz44;
+    }
+    &-lists {
+        margin-bottom: 90px;
+    }
+    &-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-number {
+        font-weight: 500;
+        line-height: 130%;
+        text-align: center;
+        color: #F10B13;
+        @include _fz74;
+    }
+    &-info {
+        font-weight: 400;
+        line-height: 130%;
+        color: #181D27;
+        margin-left: 20px;
+        @include _fz30;
+    }
+  }
+}
+

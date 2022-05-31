@@ -1,0 +1,22 @@
+.bleckmenn__project-result {
+    &-title {
+        color: $white;
+        line-height: 40%;
+    }
+    &-span {
+        margin-top: 0px;
+        @include _fz44;
+    }
+    &-desc {
+        color: $white;
+    }
+    &-text {
+        color: $white;
+    }
+    &-month{
+        color: $white;
+    }
+    &-hours {
+        color: $white;
+    }
+}

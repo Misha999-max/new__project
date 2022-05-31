@@ -1,0 +1,54 @@
+.albert {
+	&__wrraper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+		grid-gap: 20px;
+		@include _1200 {
+			flex-wrap: wrap;
+		}
+	}
+	&__left {
+		align-self: flex-start;
+		@include _1200 {
+			align-self: center;
+			img {
+				width: 12vw;
+			}
+		}
+	}
+	&__info {
+		max-width: 850px;
+		@include _400 {
+			margin-bottom: 20px;
+		}
+	}
+	&__info-desc {
+		color: $textColorArtServCareer;
+		opacity: 0.75;
+		margin-bottom: 50px;
+		@include _fz20;
+		@include _1200 {
+			margin-bottom: 20px;
+		}
+	}
+	&__info-name {
+		color: $textColorArtServCareer;
+		opacity: 0.75;
+		@include _fz20;
+		@include _1200 {
+			text-align: center;
+		}
+	}
+	&__info-position {
+		opacity: 0.75;
+		color: $textColorArtServCareer;
+		@include _fz16;
+		@include _1200 {
+			text-align: center;
+		}
+	}
+}

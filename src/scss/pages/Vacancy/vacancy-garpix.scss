@@ -1,0 +1,33 @@
+.top__lists {
+	padding-top: 100px;
+	@include _568 {
+		padding-top: 100px;
+	}
+}
+.vacancy__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	@include _1024 {
+		flex-direction: column-reverse;
+	}
+}
+.top {
+	&__lists {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	&__lists-item {
+		&:not(:last-child)::after {
+			content: '/';
+			padding-left: 5px;
+		}
+	}
+	&__lists-link {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: $textColorArtServCareer;
+	}
+}

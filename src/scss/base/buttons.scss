@@ -1,0 +1,86 @@
+.btn {
+	max-width: 356px;
+	width: 100%;
+	height: 87px;
+	background-color: $orange;
+	border: none;
+	color: $white;
+	transform: translate(0, 0);
+	cursor: pointer;
+	font-family: 'Muller';
+	@include _fz20;
+	font-weight: 500;
+	transition: all 0.8s;
+	@include _768 {
+		height: 60px;
+	}
+	&:hover {
+		background: $btnColorOrangeHBA;
+		&::before {
+			background: $btnColorOrangeHBA;
+		}
+		&::after {
+			background: $btnColorOrangeHBA;
+		}
+	}
+	&::before {
+		content: '';
+		top: -7px;
+		height: 7px;
+		width: 100%;
+		left: 3.5px;
+		transform: skewX(-45deg);
+		background-color: $btnColorOrangeBefore;
+		position: absolute;
+		transition: all 0.8s;
+	}
+	&::after {
+		content: '';
+		right: -7px;
+		height: 100%;
+		width: 7px;
+		bottom: 3.5px;
+		transform: skewY(-45deg);
+		background-color: $btnColorOrangeAfter;
+		position: absolute;
+		transition: all 0.8s;
+	}
+	&--blue {
+		background-color: $blue;
+		&::before {
+			background-color: $btnColorBlueHB;
+		}
+		&::after {
+			background-color: $btnColorBlueHA;
+		}
+		&:hover {
+			background-color: $btnBlueHover;
+			&::before {
+				background-color: $btnBlueHover;
+			}
+			&::after {
+				background-color: $btnBlueHover;
+			}
+		}
+	}
+	&--black {
+		background-color: $black;
+		opacity: 0.5;
+		&::before {
+			background-color: $btnColorBlackHBA;
+		}
+		&::after {
+			background-color: $btnColorBlackAfter;
+		}
+		&:hover {
+			background-color: $black;
+			opacity: 0.4;
+			&::before {
+				background-color: $btnColorBlackHBA;
+			}
+			&::after {
+				background-color: $btnColorBlackAfter;
+			}
+		}
+	}
+}

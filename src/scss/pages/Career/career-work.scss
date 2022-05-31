@@ -1,0 +1,74 @@
+.career-work {
+	background-color: $textColorArtServCareer;
+	padding-bottom: 200px;
+	@include _768 {
+		padding-bottom: 50px;
+	}
+	&-title {
+		@include _fz100;
+		color: $white;
+		margin-bottom: 100px;
+		@include _768 {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		@include _1400 {
+			flex-direction: row-reverse;
+			flex-wrap: wrap;
+		}
+		&:not(:last-child) {
+			margin-bottom: 180px;
+			@include _768 {
+				margin-bottom: 30px;
+			}
+		}
+		&:nth-child(2) {
+			flex-direction: row-reverse;
+		}
+		&-foto {
+			@include _1400 {
+				order: -1;
+				margin-bottom: 30px;
+			}
+		}
+		&-wrraper {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&-number {
+			color: $white;
+			opacity: 0.2;
+			margin-right: 40px;
+			@include _fz100;
+			@include _400 {
+				margin-right: 10px;
+			}
+		}
+
+		&-info {
+			@include _768 {
+				margin-bottom: 40px;
+			}
+			&-title {
+				@include _fz44;
+				color: $orange;
+			}
+			&-info {
+				@include _fz30;
+				color: $white;
+				margin-bottom: 40px;
+			}
+			&-desc {
+				@include _fz20;
+				color: $white;
+				max-width: 610px;
+			}
+		}
+	}
+}

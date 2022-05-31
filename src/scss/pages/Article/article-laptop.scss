@@ -1,0 +1,56 @@
+.laptop {
+	&__wrraper {
+		padding-top: 80px;
+	}
+	&__desc {
+		color: $textColorArtServCareer;
+		opacity: 0.75;
+		margin-bottom: 20px;
+		@include _fz20;
+	}
+
+	&__images {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include _1200 {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__images-img {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 100px;
+		margin-bottom: 150px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include _400 {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		}
+	}
+
+	&__item {
+		margin-left: 20px;
+		transition: all 0.4s ease;
+		&-link {
+			color: $orange;
+			cursor: pointer;
+
+			&:hover {
+				border-bottom: 1px solid $orange;
+			}
+		}
+	}
+}

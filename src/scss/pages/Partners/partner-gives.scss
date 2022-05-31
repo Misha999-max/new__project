@@ -1,0 +1,83 @@
+.partner-gives {
+	padding-top: 100px;
+	padding-bottom: 180px;
+	.partner__gives {
+		@include _768 {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+		&-title {
+			@include _fz100;
+			margin-bottom: 40px;
+		}
+		&-nav {
+			margin-bottom: 25px;
+		}
+		&-lists {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			li {
+				@include _fz44;
+				margin-right: 80px;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		&-link {
+			color: $textColorArtServCareer;
+		}
+	}
+	.partner__slide {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		border-top: 1px solid rgba(0, 0, 0, 0.25);
+		&-list {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			padding-top: 110px;
+			@include _pt140;
+			@include _1200 {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+		&-top {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 30px;
+			@include _568 {
+				margin-bottom: 10px;
+			}
+			img {
+				@include _568 {
+					transform: scale(0.6);
+				}
+			}
+		}
+		&-title {
+			@include _fz30;
+			color: $textColorArtServCareer;
+			margin-left: 20px;
+			@include _568 {
+				margin-left: 10px;
+				font-size: 24px;
+			}
+		}
+
+		&-desc {
+			@include _fz18;
+			color: $textColorArtServCareer;
+			opacity: 0.75;
+			@include _568 {
+				font-size: 15px;
+			}
+		}
+	}
+}

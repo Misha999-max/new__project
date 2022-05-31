@@ -1,0 +1,619 @@
+@mixin _1600 {
+	@media (max-width: 1600px) {
+		@content;
+	}
+}
+@mixin _1400 {
+	@media (max-width: 1360px) {
+		@content;
+	}
+}
+@mixin _1200 {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
+@mixin _1024 {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin _768 {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin _568 {
+	@media (max-width: 568px) {
+		@content;
+	}
+}
+@mixin _400 {
+	@media (max-width: 400px) {
+		@content;
+	}
+}
+@mixin _350 {
+	@media (max-width: 350px) {
+		@content;
+	}
+}
+
+//font-zize
+@mixin _fz100 {
+	font-weight: bold;
+	line-height: 120%;
+	font-size: 100px;
+	@include _1600 {
+		font-size: 90px;
+	}
+	@include _1400 {
+		font-size: 80px;
+	}
+	@include _1200 {
+		font-size: 70px;
+	}
+	@include _1024 {
+		font-size: 60px;
+	}
+	@include _768 {
+		font-size: 52px;
+	}
+	@include _568 {
+		font-size: 52px;
+	}
+	@include _400 {
+		font-size: 52px;
+	}
+	@include _350 {
+		font-size: 52px;
+	}
+}
+
+@mixin _fz44 {
+	font-size: 44px;
+	line-height: 130%;
+	font-weight: bold;
+	@include _1600 {
+		font-size: 44px;
+	}
+	@include _1400 {
+		font-size: 40px;
+	}
+	@include _1200 {
+		font-size: 35px;
+	}
+	@include _1024 {
+		font-size: 30px;
+	}
+}
+
+@mixin _fz60 {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 120%;
+	@include _1600 {
+		font-size: 60px;
+	}
+	@include _1400 {
+		font-size: 55px;
+	}
+	@include _1200 {
+		font-size: 50px;
+	}
+	@include _1024 {
+		font-size: 45px;
+	}
+	@include _768 {
+		font-size: 40px;
+	}
+	@include _568 {
+		font-size: 35px;
+	}
+	@include _400 {
+		font-size: 30px;
+	}
+}
+
+@mixin _fz20 {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 120%;
+	@include _1600 {
+		font-size: 20px;
+	}
+	@include _1400 {
+		font-size: 19px;
+	}
+	@include _1200 {
+		font-size: 18px;
+	}
+	@include _1024 {
+		font-size: 17px;
+	}
+	@include _768 {
+		font-size: 15px;
+	}
+}
+
+@mixin _fz30 {
+	font-size: 30px;
+	line-height: 130%;
+	font-weight: normal;
+	@include _1600 {
+		font-size: 30px;
+	}
+	@include _1400 {
+		font-size: 28px;
+	}
+	@include _1200 {
+		font-size: 25px;
+	}
+	@include _1024 {
+		font-size: 25px;
+	}
+	@include _768 {
+		font-size: 24px;
+	}
+	@include _568 {
+		font-size: 20px;
+	}
+}
+
+@mixin _fz74 {
+	font-size: 74px;
+	line-height: 130%;
+	font-weight: 500;
+	@include _1600 {
+		font-size: 74px;
+	}
+	@include _1400 {
+		font-size: 64px;
+	}
+	@include _1200 {
+		font-size: 54px;
+	}
+	@include _1024 {
+		font-size: 44px;
+	}
+	@include _768 {
+		font-size: 34px;
+	}
+	@include _568 {
+		font-size: 50px;
+	}
+}
+
+@mixin _fz24 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 130%;
+	@include _1600 {
+		font-size: 24px;
+	}
+	@include _1400 {
+		font-size: 23px;
+	}
+	@include _1200 {
+		font-size: 22px;
+	}
+	@include _1024 {
+		font-size: 22px;
+	}
+	@include _768 {
+		font-size: 21px;
+	}
+	@include _568 {
+		font-size: 20px;
+	}
+}
+
+@mixin _fz134 {
+	font-weight: bold;
+	font-size: 134px;
+	line-height: 130%;
+	@include _1600 {
+		font-size: 130px;
+	}
+	@include _1400 {
+		font-size: 120px;
+	}
+	@include _1200 {
+		font-size: 100px;
+	}
+	@include _1024 {
+		font-size: 100px;
+	}
+
+	@include _400 {
+		font-size: 70px;
+	}
+}
+
+@mixin _fz38 {
+	font-weight: 500;
+	font-size: 38px;
+	line-height: 130%;
+	@include _1600 {
+		font-size: 38px;
+	}
+	@include _1400 {
+		font-size: 35px;
+	}
+	@include _1200 {
+		font-size: 30px;
+	}
+	@include _1024 {
+		font-size: 25px;
+	}
+	@include _768 {
+		font-size: 20px;
+	}
+	@include _568 {
+		font-size: 15px;
+	}
+	@include _400 {
+		font-size: 10px;
+	}
+	@include _350 {
+		font-size: 9px;
+	}
+}
+
+@mixin _fz16 {
+	@include _1600 {
+		font-size: 16px;
+	}
+	@include _1400 {
+		font-size: 15px;
+	}
+	@include _1200 {
+		font-size: 14px;
+	}
+	@include _1024 {
+		font-size: 13px;
+	}
+	@include _768 {
+		font-size: 12px;
+	}
+}
+@mixin _fz18 {
+	@include _1600 {
+		font-size: 18px;
+	}
+	@include _1400 {
+		font-size: 17px;
+	}
+	@include _1200 {
+		font-size: 16px;
+	}
+	@include _1024 {
+		font-size: 15px;
+	}
+	@include _568 {
+		font-size: 14px;
+	}
+}
+
+@mixin _fz14 {
+	@include _1600 {
+		font-size: 14px;
+	}
+	@include _1400 {
+		font-size: 14px;
+	}
+	@include _1200 {
+		font-size: 14px;
+	}
+	@include _1024 {
+		font-size: 14px;
+	}
+	@include _768 {
+		font-size: 14px;
+	}
+	@include _568 {
+		font-size: 13px;
+	}
+	@include _400 {
+		font-size: 12px;
+	}
+	@include _350 {
+		font-size: 9px;
+	}
+}
+
+@mixin _mtb80 {
+	@include _1024 {
+		margin-top: 50px;
+	}
+	@include _768 {
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+	@include _400 {
+		margin-top: 20px;
+	}
+}
+@mixin __pt112 {
+	@include _1024 {
+		padding-top: 100px;
+	}
+	@include _768 {
+		padding-top: 80px;
+	}
+	@include _568 {
+		padding-top: 50px;
+	}
+}
+
+@mixin _pt210 {
+	@include _768 {
+		padding-top: 100px;
+	}
+	@include _568 {
+		padding-top: 80px;
+	}
+	@include _350 {
+		padding-top: 30px;
+	}
+}
+
+@mixin _pt100 {
+	@include _1600 {
+		padding-top: 90px;
+	}
+	@include _1400 {
+		padding-top: 80px;
+	}
+	@include _1200 {
+		padding-top: 60px;
+	}
+	@include _568 {
+		padding-top: 40px;
+	}
+	@include _400 {
+		padding-top: 20px;
+	}
+	@include _350 {
+		padding-top: 15px;
+	}
+}
+
+@mixin _pt120 {
+	@include _1024 {
+		padding-top: 80px;
+	}
+	@include _768 {
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+	@include _400 {
+		padding-top: 20px;
+	}
+}
+
+@mixin _ptb150 {
+	@include _1600 {
+		padding-top: 140px;
+		padding-bottom: 140px;
+	}
+
+	@include _1400 {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+
+	@include _1200 {
+		padding-top: 115px;
+		padding-bottom: 115px;
+	}
+
+	@include _1024 {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@include _768 {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+
+	@include _568 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@include _400 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	@include _350 {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+@mixin _pt140 {
+	@include _1600 {
+		padding-top: 125px;
+	}
+	@include _1400 {
+		padding-top: 110px;
+	}
+	@include _1200 {
+		padding-top: 95px;
+	}
+	@include _1024 {
+		padding-top: 80px;
+	}
+	@include _768 {
+		padding-top: 65px;
+	}
+	@include _568 {
+		padding-top: 50px;
+	}
+	@include _400 {
+		padding-top: 35px;
+	}
+	@include _350 {
+		padding-top: 20px;
+	}
+}
+
+@mixin _ptb-serviceLink {
+	@media (max-width: 1600px) {
+		margin-top: 70px;
+		margin-bottom: 50px;
+	}
+	@media (max-width: 1400px) {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	@media (max-wigth: 1200px) {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 1024px) {
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+	@media (max-width: 768px) {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	@media (max-width: 568px) {
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	@media (max-width: 400px) {
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	@media (max-width: 250px) {
+		margin-top: 10px;
+	}
+}
+
+@mixin _flexWrap {
+	@include _1200 {
+		flex-wrap: wrap;
+	}
+	@include _768 {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	@include _400 {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@mixin _caseMB100 {
+	@include _1200 {
+		margin-bottom: 80px;
+	}
+	@include _1024 {
+		margin-bottom: 60px;
+	}
+	@include _768 {
+		margin-bottom: 40px;
+	}
+	@include _400 {
+		margin-bottom: 20px;
+	}
+}
+
+@mixin _casePB100 {
+	@include _1200 {
+		padding-bottom: 80px;
+	}
+	@include _1024 {
+		padding-bottom: 60px;
+	}
+	@include _768 {
+		padding-bottom: 40px;
+	}
+	@include _400 {
+		padding-bottom: 20px;
+	}
+}
+
+@mixin _940 {
+	@media (max-width: 940px) {
+		@content;
+	}
+}
+
+// @mixin _arrowWrraper {
+// 	position: relative;
+// 	transition: all 0.3s ease;
+// }
+
+// @mixin _arrowSpanFirst {
+// 	display: block;
+// 	background-color: $orange;
+// }
+// @mixin _firstSpanBefore {
+// 	content: '';
+// 	display: block;
+// 	background-color: $orange;
+// 	transition: all 0.3s ease;
+// }
+
+// @mixin _arrowSpanSecond {
+// 	display: block;
+// 	position: absolute;
+// 	background-color: $orange;
+// 	transform: rotate(-45deg);
+// }
+
+// @mixin _arrowSpanFird {
+// 	display: block;
+// 	position: absolute;
+// 	background-color: $orange;
+// 	transform: rotate(45deg);
+// }
+
+// @mixin _vacancyTitle {
+// 	font-weight: 700;
+// 	font-size: 44px;
+// 	line-height: 130%;
+// }
+// @mixin _vacancyAsideAboutText16 {
+// 	font-weight: 400;
+// 	font-size: 16px;
+// 	line-height: 150%;
+// }
+// @mixin _vacancyAsideAboutText18 {
+// 	font-weight: 400;
+// 	font-size: 18px;
+// 	line-height: 150%;
+// }
+// @mixin _vacancyAsideAboutText20 {
+// 	font-weight: 700;
+// 	font-size: 20px;
+// 	line-height: 24px;
+// }
+// @mixin _vacancyAsideAboutText22 {
+// 	font-weight: 400;
+// 	font-size: 22px;
+// 	line-height: 130%;
+// }
+// @mixin _vacancyAsideAboutText30 {
+// 	font-weight: 400;
+// 	font-size: 30px;
+// 	line-height: 130%;
+// }
+// @mixin _vacancyAsideAboutText38 {
+// 	font-weight: 500;
+// 	font-size: 38px;
+// 	line-height: 130%;
+// }
+// @mixin _vacancyAsideAboutText44 {
+// 	font-weight: 700;
+// 	font-size: 44px;
+// 	line-height: 130%;
+// }

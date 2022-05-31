@@ -1,0 +1,78 @@
+.case-banner {
+	padding-top: 80px;
+	min-height: 100vh;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&__wrapper {
+		padding-top: 60px;
+		display: flex;
+		justify-content: space-between;
+		&-excerpt {
+			color: $white;
+			@include _fz20;
+			line-height: 130%;
+		}
+	}
+	&__nav {
+		&-list {
+			list-style: none;
+		}
+		&-link {
+			color: $white;
+			@include _fz20;
+			line-height: 150%;
+		}
+	}
+	&__title {
+		color: $white;
+		// max-width: 1830px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 116px;
+		@include _fz100;
+		@include _568 {
+			font-size: 45px;
+		}
+		@include _400 {
+			font-size: 40px;
+		}
+	}
+	&__picture {
+		&-img {
+			margin: 0 auto;
+			border: 4px solid black;
+			border-radius: 34px;
+		}
+	}
+	&__wrapp {
+		padding: 100px 0 100px;
+		position: relative;
+		@include _1024 {
+			padding: 80px 0;
+		}
+		@include _768 {
+			padding: 60px 0;
+		}
+		&-svg {
+			@include _1024 {
+				width: 213px;
+				align-self: flex-start;
+			}
+		}
+		&-text {
+			max-width: 1140px;
+			@include _fz20;
+			line-height: 130%;
+			opacity: 0.75;
+			margin-left: 30px;
+			@include _1024 {
+				margin-top: 40px;
+				margin-left: 0;
+			}
+		}
+	}
+	&__slider {
+		transform: translateY(50%);
+	}
+}

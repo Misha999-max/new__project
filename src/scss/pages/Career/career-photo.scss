@@ -1,0 +1,39 @@
+.career-foto {
+	padding-bottom: 150px;
+	background: linear-gradient(180deg, rgba(24, 29, 39, 0) 0%, #181d27 65.21%);
+	&-bgc {
+		margin: 0 auto;
+		background: linear-gradient(
+			180deg,
+			rgba(24, 29, 39, 0) 0%,
+			$textColorArtServCareer 65.21%
+		);
+		&__img {
+			width: 100%;
+		}
+	}
+
+	&__wrraper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	&-title {
+		@include _fz44;
+		color: $orange;
+		max-width: 980px;
+		margin-bottom: 20px;
+		margin-top: -300px;
+		@include _fz44;
+		@include _768 {
+			margin-top: -100px;
+		}
+	}
+	&-desc {
+		@include _fz30;
+		color: $white;
+		max-width: 900px;
+		@include _fz30;
+	}
+}

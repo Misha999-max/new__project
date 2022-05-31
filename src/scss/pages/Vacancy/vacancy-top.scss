@@ -1,0 +1,35 @@
+.vacancy {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	&-title {
+		color: $textColorArtServCareer;
+		margin-bottom: 20px;
+		@include _fz100;
+		@include _1024 {
+			display: none;
+		}
+	}
+	&-title-hidden {
+		color: $textColorArtServCareer;
+		margin-bottom: 20px;
+		@include _fz100;
+	}
+	&-desc-hidden {
+		@include _fz18;
+		color: $textColorArtServCareer;
+	}
+	&-desc {
+		@include _fz18;
+		color: $textColorArtServCareer;
+		@include _1024 {
+			display: none;
+		}
+	}
+
+	&__hidden-top {
+		display: none;
+		@include _1024 {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.more {
+	display: flex;
+	align-items: center;
+	padding-top: 80px;
+	color: $orange;
+	width: max-content;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	@include _fz44;
+	@include _768 {
+		padding-top: 40px;
+
+		padding-bottom: 40px;
+	}
+	svg * {
+		transition-duration: 500ms;
+	}
+	&:hover svg * {
+		-webkit-transform: translate(15px, 0);
+		-ms-transform: translate(15px 0);
+		transform: translate(15px 0);
+	}
+	svg {
+		margin-left: 20px;
+		width: 74px;
+		@include _1600 {
+			margin-left: 10px;
+		}
+	}
+}

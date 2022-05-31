@@ -1,0 +1,45 @@
+.result {
+	overflow: hidden;
+	padding-top: 100px;
+	@include _pt100;
+	&__wrapper {
+		display: flex;
+		@include _1400 {
+			flex-wrap: wrap;
+		}
+	}
+	
+	&__title {
+		@include _fz100;
+	}
+	&__description {
+		margin-top: 20px;
+		@include _fz20;
+	}
+	&__text {
+		margin-top: 60px;
+		@include _fz24;
+	}
+	&__month {
+		display: block;
+		margin-top: 16px;
+		color: $red;
+		@include _fz74;
+	}
+	&__hours {
+		display: block;
+		width: max-content;
+		color: $red;
+		margin-top: 16px;
+		@include _fz60;
+		font-weight: 500;
+	}
+	&__img {
+		margin-top: -250px;
+		margin-left: -200px;
+		@include _1400 {
+			margin-top: -100px;
+			margin-left: -50px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.slider-swiper {
+	background-position: right top, right bottom;
+	background-size: 34%;
+	@include _568 {
+		background-position: right top, right top;
+		background-size: 80%;
+		background-position-y: 0, 43px;
+	}
+	background-repeat: no-repeat, no-repeat;
+	&__title {
+		@include _fz100;
+		max-width: 66%;
+	}
+	&__list {
+		margin-top: 40px;
+		&-item {
+			margin-top: 20px;
+			color: $black;
+			display: flex;
+			align-items: center;
+			opacity: 0.75;
+			grid-gap: 20px;
+			@include _fz20;
+			line-height: 130%;
+			&::before {
+				content: '';
+				display: block;
+				width: 15px;
+				height: 15px;
+				background: #009cd4;
+			}
+		}
+	}
+	&__description {
+		color: $black;
+		margin-top: 40px;
+		opacity: 0.75;
+		@include _fz20;
+		line-height: 130%;
+	}
+	&__swiper {
+		padding-top: 230px !important;
+		padding-bottom: 200px !important;
+		@include _568 {
+			height: 982px !important;
+			padding-top: 340px !important;
+			padding-bottom: 0 !important;
+		}
+	}
+}

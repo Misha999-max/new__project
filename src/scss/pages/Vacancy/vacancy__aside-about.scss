@@ -1,0 +1,107 @@
+.about {
+	padding: 40px 60px;
+	background-color: $bgcBlog;
+	max-width: 710px;
+	margin-bottom: 20px;
+	margin-top: 100px;
+	@include _1024 {
+		padding: 10px;
+	}
+	&__vacancy {
+		color: $textColorArtServCareer;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+		transition: all 0.4s ease;
+		&-title {
+			@include _fz30;
+			margin-bottom: 20px;
+		}
+
+		&-salary {
+			@include _fz20;
+			opacity: 0.75;
+		}
+
+		&-money {
+			@include _fz38;
+			color: $orange;
+		}
+	}
+
+	&__skills {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+		&-title {
+			@include _fz20;
+			opacity: 0.75;
+			margin-bottom: 10px;
+		}
+
+		&-lists {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+			grid-gap: 10px;
+		}
+
+		&-item {
+			@include _fz20;
+			padding: 6px 8px;
+			background-color: $white;
+			// margin-left: 10px;
+			// margin-bottom: 10px;
+		}
+	}
+
+	&__location {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(21, 25, 34, 0.25);
+		&-title {
+			@include _fz20;
+			opacity: 0.75;
+			margin-bottom: 10px;
+		}
+
+		&-ivan {
+			display: inline-block;
+			@include _fz20;
+			@include _768 {
+				display: block;
+			}
+		}
+
+		&-spb {
+			display: inline-block;
+			@include _fz20;
+			margin-left: 60px;
+			@include _768 {
+				display: block;
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__work {
+		padding-top: 30px;
+		&-title {
+			@include _fz20;
+			opacity: 0.75;
+			margin-bottom: 10px;
+		}
+
+		&-time {
+			display: inline-block;
+			@include _fz24;
+		}
+	}
+	&__btn {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 575px;
+	}
+}

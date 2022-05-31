@@ -1,0 +1,143 @@
+.services {
+	padding-top: 0;
+	&__title {
+		padding-top: 140px;
+		margin-bottom: 20px;
+		@include _fz100;
+	}
+
+	&__descr {
+		max-width: 850px;
+		margin-bottom: 100px;
+		@include _fz20;
+		line-height: 150%;
+		transition: all 0.4s ease;
+	}
+
+	&__list {
+		margin-bottom: 600px;
+		@include _1024 {
+			margin-bottom: 40px;
+		}
+		&-item {
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba(221, 193, 193, 0.25);
+			margin-bottom: 70px;
+			&:hover {
+				.services__list-hidden {
+					display: block;
+				}
+				.services__list-item--link {
+					@include _fz60;
+				}
+				.services__list-item-arrow {
+					transform: rotate(-135deg);
+				}
+			}
+			@include _768 {
+				margin-bottom: 30px;
+			}
+
+			&-wrraper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&-arrow {
+				position: relative;
+				width: 60px;
+				margin-left: 40px;
+				transition: all 0.3s ease;
+				margin-bottom: 30px;
+				transform: rotate(45deg);
+				&-first {
+					display: block;
+					width: 60px;
+					height: 2px;
+					background-color: $textColorArtServCareer;
+				}
+
+				&-second {
+					display: block;
+					position: absolute;
+					width: 30px;
+					height: 2px;
+					background-color: $textColorArtServCareer;
+					left: 35px;
+					top: 10px;
+					transform: rotate(-45deg);
+				}
+
+				&-fird {
+					display: block;
+					position: absolute;
+					width: 30px;
+					height: 2px;
+					background-color: $textColorArtServCareer;
+					top: -10px;
+					left: 35px;
+					transform: rotate(45deg);
+				}
+			}
+
+			&--link {
+				color: $textColorArtServCareer;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				transition: all 0.4s ease;
+				padding-bottom: 20px;
+				@include _fz44;
+				line-height: 130%;
+				svg {
+					--first-color: $textColorArtServCareer;
+					@include _768 {
+						transform: scale(0.7);
+					}
+				}
+				@include _fz44;
+			}
+		}
+
+		&-hidden {
+			display: none;
+			&-details {
+				margin-top: 60px;
+				&-lists--item {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					column-gap: 140px;
+					align-items: center;
+					margin-bottom: 40px;
+					&:hover p {
+						visibility: visible;
+					}
+					@include _1024 {
+						grid-template-columns: 1fr;
+						grid-template-rows: auto;
+						column-gap: 10px;
+						margin-bottom: 20px;
+					}
+				}
+				&-lists--desc {
+					visibility: hidden;
+					transition: all 0.3s ease;
+					@include _fz20;
+					line-height: 150%;
+				}
+				&-lists--link {
+					padding: 20px;
+					color: $textColorArtServCareer;
+					transition: all 0.4s ease;
+					@include _fz30;
+					line-height: 130%;
+					&:hover {
+						border: 1px solid inherit;
+						background-color: $orange;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
